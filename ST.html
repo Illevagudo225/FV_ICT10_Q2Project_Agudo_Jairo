@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>OBMC-FV Club Information</title>
+
+    <style>
+
+        
+    body {
+    background-image: url(  https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117275.jpg?semt=ais_hybrid);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+                   * {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+}
+
+        .contai {
+            width: 900px;   
+            length: 550px;        
+            margin: 20px auto;         
+            border: 2px solid black;   
+            border-radius: 10px;     
+            background-color: rgba(168, 168, 168, 0.7);  
+            text-align: center;      
+            font-family: 'Pixelify Sans', sans-serif; 
+        }
+
+        #ski {
+            font-size: 45px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #clubSelect {
+            font-size: 30px;  
+            padding: 12px 20px; 
+            width: 350px; 
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 2px solid rgba(0,0,0,0.3);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        #showBtn {
+            font-size: 30px;
+            padding: 12px 30px;
+            cursor: pointer;
+            border-radius: 15px;
+            border: 2px solid rgba(0,0,0,0.3);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+    
+    </style>
+
+<nav style="background-color: white; height: 60px;" class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse">
+            <ul style="color: black;" class="navbar-nav me-auto">
+        
+                <img style="margin-right:16px; height: 45px;" 
+                     src="https://img.freepik.com/premium-vector/jja-logo-jja-letter-jja-letter-logo-design-initials-jja-logo-linked-with-circle-uppercase-monogram-logo-jja-typography-technology-business-real-estate-brand_229120-76159.jpg" 
+                     alt="logo"> 
+
+                <li class="nav-item">
+                    <a style="margin-right:13px; margin-top: 7px;" class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a style="margin-right:13px; margin-top: 7px;" class="nav-link" href="st.html">Clubs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a style="margin-right:200px; margin-top: 7px;" class="nav-link" href="sw.html">Grade Calculator</a>
+                </li>
+            </ul>
+         
+            <form class="d-flex">
+                <input style="margin-right:70px; width:200px;" class="form-control" type="text" placeholder="search..."> 
+            </form>
+        </div>
+    </div>
+</nav>
+>
+
+
+
+</head>
+
+<br> <br> <br> <br>
+
+<body>
+
+
+<center>
+
+<div>
+    <h1 style="font-size: 80px;">JJA University</h1>
+</div>
+<div>
+    <h1 style="font-size: 25px;">CLUB INFORMATION PAGE</h1> <BR>
+</div>
+</center>
+
+<div style="background-color: rgba(0, 0, 0, 0.2);
+            font-family: Lexend;
+            width: 1100px;
+            padding: 30px;
+            border-radius: 14px;
+            margin: auto;">
+        <center>
+                  <br>
+          
+ <br>
+            <h1 style="font-size:25px">Hello there and good day! Welcome to the OBMC-FV Club Information Assistant! Here, you'll know everything you need to know about OBMC-FV's clubs!</h1>
+            <br><br>
+            <select id="clubSelect">
+                <option value="">-- Choose a club --</option>
+                <option value="Math Club">Math Club</option>
+                <option value="Science Club">Science Club</option>
+                <option value="Dance Club">Dance Club</option>
+                <option value="Communications Arts Club">Communications Arts Club</option>
+                <option value="Basketball Varsity">Basketball Varsity</option>
+                <option value="Marching Band Club">Marching Band Club</option>
+                <option value="Volleyball Varsity">Volleyball Varsity</option>
+                <option value="COCC Club">COCC Club</option>
+                <option value="Glee Club">Glee Club</option>
+                <option value="Social Science Club">Social Science Club</option>
+            </select>
+     <br><br>
+    
+            <button id="showBtn" py-click="show_info">Show Club Information</button>
+ <br><br><br>
+            <div id="output"></div>
+            <br>
+
+            <py-script src="ST.py"></py-script>
+        </center>
+    </div>
+
+    <BR> 
+    <div style="background-color: rgb(12, 12, 12);
+                    font-family: Lexend;
+                    width: auto;
+                    height: 95px;
+                    margin: auto;
+                    text-align: center;" class="container2">
+<br>
+<center>
+             <footer>
+
+              <p style="margin-top: 9px; color: rgb(245, 243, 243); font-size: 15px"> This is only a mock-up university based off hardvard university, solely made for the purpose of the 2Q ICT Project. <br>
+    
+              <a href="mailto:agudo.js@obmontessori.edu.ph"> Jairo Agudo </a></p>
+              <br>
+             
+            </footer>
+        </center>
+
+</body>
+</html>
